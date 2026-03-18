@@ -1,0 +1,51 @@
+<<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>YouTube Premium Client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo" onclick="Actions.goHome()">
+            <span class="logo-red">▶</span> Premium
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="検索">
+            <button id="search-btn">🔍</button>
+        </div>
+        <div class="user-icons">
+            <div class="icon-circle" onclick="Actions.showSubs()">🔔</div>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <nav class="sidebar">
+            <div class="nav-item" onclick="Actions.goHome()">🏠<span>ホーム</span></div>
+            <div class="nav-item" onclick="Actions.showShorts()">⚡<span>ショート</span></div>
+            <div class="nav-item" onclick="Actions.showLiveHub()" style="color: #ff4e45; font-weight: bold;">🔴<span>Live</span></div>
+            <div class="nav-item" onclick="Actions.showSubs()">👥<span>登録済み</span></div>
+            <hr>
+            <div class="nav-item" onclick="Actions.showHistory()">🕒<span>履歴</span></div>
+        </nav>
+        <main class="content" id="view-container"></main>
+    </div>
+
+    <script src="music.js"></script>
+    <script src="game.js"></script>
+    <script src="tetris.js"></script>
+    <script src="snake.js"></script>
+    <script src="reversi.js"></script>
+    <script src="shogi.js"></script>
+    <script src="blockblast.js"></script>
+    <script src="game2048.js"></script>
+    <script src="towerdefense.js"></script>
+    <script src="airhockey.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="streaming.js"></script>
+    <script src="search.js"></script>
+    <script src="app.js"></script>
+    <script src="playlist.js"></script>
+</body>
+</html>
